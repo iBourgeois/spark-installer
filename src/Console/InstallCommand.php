@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\SparkInstaller\Console;
+namespace iBourgeois\SparkInstaller\Console;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Console\Command\Command;
@@ -19,7 +19,7 @@ class InstallCommand extends Command
         $this->ignoreValidationErrors();
 
         $this->setName('install')
-                ->setDescription('Install Laravel Spark into the current project.');
+                ->setDescription('Install Spark into the current project.');
     }
 
     /**
@@ -33,7 +33,7 @@ class InstallCommand extends Command
     {
         $composer = $this->findComposer();
 
-        $process = new Process($composer . ' require laravel/spark', null, null, null, null);
+        $process = new Process($composer . ' require ibourgeois/spark', null, null, null, null);
 
         $process->run(function ($type, $line) use ($output) {
             $output->write($line);

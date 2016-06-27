@@ -88,7 +88,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may configure the log settings for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
+    | the box, Spark uses the Monolog PHP logging library. This gives
     | you a variety of powerful log handlers / formatters to utilize.
     |
     | Available Settings: "single", "daily", "syslog", "errorlog"
@@ -146,7 +146,7 @@ return [
         /**
          * Spark Service Providers...
          */
-        Laravel\Spark\Providers\SparkServiceProvider::class,
+        iBourgeois\Spark\Providers\SparkServiceProvider::class,
     ],
 
     /*

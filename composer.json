@@ -1,17 +1,21 @@
 {
-    "name": "hamleet/spark-installer",
-    "description": "Quick installer for Laravel Spark.",
+    "name": "ibourgeois/spark-installer",
+    "description": "Quick installer for Spark.",
     "keywords": ["laravel", "spark"],
     "license": "MIT",
     "authors": [
         {
             "name": "Taylor Otwell",
             "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "Derek Bourgeois",
+            "email": "derek@ibourgeois.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\SparkInstaller\\": "src/"
+            "iBourgeois\\SparkInstaller\\": "src/"
         }
     },
     "require": {
